@@ -19,13 +19,20 @@ def player_function():
     print(f"The player has: {player['life']} HP")
     print(f"The player has: {player['attack']} attack")
     print(f"The player has: {player['gold']} gold")
-    print(f"[1] Attack  [2]{player.get('inventory'), 'Vazio'}")
+    return player
+    
 def monster1():
     monster1 = {
         "life": 20,
-        "attack": random.randint(0,5),
+        "attack": 1,
         "gold": 10
     }
+    return monster1
+
 def shoop():
-    shoop
+    itens_to_sell = [
+        {"nome": "Iron Sword", "bonus_attack": 5, "price": 10},
+        {"nome": "Dragon Slayer", "bonus_attack": 20, "price": 50},
+        {"heal_potion": "Healing Potion", "healed_life": 10, "price": 5}
+    ]
 
